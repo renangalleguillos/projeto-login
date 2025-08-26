@@ -33,7 +33,6 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         background-color: white;
         width: 250px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
@@ -42,6 +41,7 @@
         height: 500px;
         border-radius: 20px;
         overflow: hidden;
+        transform: translate(-50%, -50%);
     }
 
     section#login > div#imagem {
@@ -88,8 +88,8 @@
         font-size: 1em;
         width: 100%;
         padding-top: 5px;
-        margin-top: 7px;
-        height: 40px;
+        margin-top: 2px;
+        height: 34px;
         background-color:  #5dcfcc;
         border: 1px solid #49a09d;
         border-radius: 5px;
@@ -111,15 +111,39 @@
 
     form > div.campo {
         background-color: #5f2c82;
+        border: 2px solid #5f2c82;
         width: 100%;
         display: block;
-        height: 40px;
-        border-radius: 5px;
         color: white;
-        margin-top: -7px;
+        height: 40px;
+        border-radius: 8px;
+        margin: 5px;
     }
 
     span {
         padding-top: 5px;
 
+    }
+
+    div.campo > i{
+        color: white;
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+
+    div.campo > input:focus-within {
+        background-color: white;
+        border: none;
+    }
+
+    div.campo > input{
+        background-color: #93bebc;
+        font-size: 1em;
+        width: calc(100%-44px);
+        height: 100%;
+        border: 0px;
+        border-radius: 8px;
+        padding: 8px;
+       transform: translateY(-5px);
     }
